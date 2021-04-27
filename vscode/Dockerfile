@@ -116,7 +116,7 @@ COPY ./ubuntu.sources.list /etc/apt/sources.list
 
 RUN apt-get install -y build-essential
         #Replaces RUN apt-get install gawk g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev libreadline-dev libssl1.0-dev -y
-RUN apt-get install apt-get install gawk g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev libreadline-dev 
+RUN apt-get install gawk g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev libreadline-dev -y
 # run manually; chmod -R 777 .rvm
 # run manually: rvm use 2.3.3
 # run manually: gem install bundler -v 1.17.3  bundle _1.17.3_ install

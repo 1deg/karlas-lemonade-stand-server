@@ -1,0 +1,8 @@
+export PATH="/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:$PATH"
+export GEM_HOME='/home/coder/.rvm/gems/ruby-3.0.0'
+export GEM_PATH='/home/coder/.rvm/gems/ruby-3.0.0:/home/coder/.rvm/gems/ruby-3.0.0@global'
+export MY_RUBY_HOME='/home/coder/.rvm/rubies/ruby-3.0.0'
+export IRBRC='/home/coder/.rvm/rubies/ruby-3.0.0/.irbrc'
+unset MAGLEV_HOME
+unset RBXOPT
+export RUBY_VERSION='ruby-3.0.0'

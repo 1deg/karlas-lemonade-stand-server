@@ -1,0 +1,17 @@
+current directory: /home/coder/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0/gems/executable-hooks-1.6.1/ext/wrapper_installer
+/home/coder/.rvm/rubies/ruby-2.3.3/bin/ruby -I /home/coder/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0 -r ./siteconf20210427-12854-1gdar3r.rb extconf.rb
+bundler 1.17.3
+rake 10.4.2
+rdoc 4.2.1
+
+current directory: /home/coder/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0/gems/executable-hooks-1.6.1/ext/wrapper_installer
+make "DESTDIR=" clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: /home/coder/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0/gems/executable-hooks-1.6.1/ext/wrapper_installer
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/coder/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0/gems/executable-hooks-1.6.1/ext/wrapper_installer
+make "DESTDIR=" install
+make: Nothing to be done for 'install'.

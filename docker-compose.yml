@@ -1,0 +1,14 @@
+#https://registry.hub.docker.com/r/codercom/code-server/
+version: '3'
+services:
+  interviews:
+    build: ./vscode
+    container_name: "interviews"
+    ports:
+      - "8080:8080"
+      - "3000:3000"
+    volumes:
+      - ./vscode:/vscode
+      - ./vscode/.config:/home/coder/.config/code-server/
+      - ./karlas-lemonade-stand-rails:/vscode/rails
+      - ./karlas-lemonade-stand-node:/vscode/node

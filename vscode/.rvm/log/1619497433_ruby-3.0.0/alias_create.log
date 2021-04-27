@@ -1,0 +1,50 @@
+[2021-04-27 04:23:53] alias_create_execute
+alias_create_execute () 
+{ 
+    for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path";
+    do
+        if [[ -L "$_path/$alias_name" ]]; then
+            \command \rm -fv "$_path/$alias_name" || return $?;
+        fi;
+        \command \ln -fs "$_path/$rvm_ruby_string" "$_path/$alias_name" || return $?;
+    done;
+    __rvm_db_ "$rvm_path/config/alias" "$alias_name" "$rvm_ruby_string"
+}
+current path: /home/coder/.rvm/src/rvm
+GEM_PATH=/home/coder/.rvm/gems/ruby-3.0.0:/home/coder/.rvm/gems/ruby-3.0.0@global
+GEM_HOME=/home/coder/.rvm/gems/ruby-3.0.0
+PATH=/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:/home/coder/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+command(1): alias_create_execute
++ /scripts/alias : alias_create_execute()  27 > for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path"
++ /scripts/alias : alias_create_execute()  29 > [[ -L /home/coder/.rvm/rubies/default ]]
++ /scripts/alias : alias_create_execute()  32 > command ln -fs /home/coder/.rvm/rubies/ruby-3.0.0 /home/coder/.rvm/rubies/default
++ /scripts/alias : alias_create_execute()  32 > ln -fs /home/coder/.rvm/rubies/ruby-3.0.0 /home/coder/.rvm/rubies/default
++ /scripts/alias : alias_create_execute()  27 > for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path"
++ /scripts/alias : alias_create_execute()  29 > [[ -L /home/coder/.rvm/gems/default ]]
++ /scripts/alias : alias_create_execute()  32 > command ln -fs /home/coder/.rvm/gems/ruby-3.0.0 /home/coder/.rvm/gems/default
++ /scripts/alias : alias_create_execute()  32 > ln -fs /home/coder/.rvm/gems/ruby-3.0.0 /home/coder/.rvm/gems/default
++ /scripts/alias : alias_create_execute()  27 > for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path"
++ /scripts/alias : alias_create_execute()  29 > [[ -L /home/coder/.rvm/environments/default ]]
++ /scripts/alias : alias_create_execute()  32 > command ln -fs /home/coder/.rvm/environments/ruby-3.0.0 /home/coder/.rvm/environments/default
++ /scripts/alias : alias_create_execute()  32 > ln -fs /home/coder/.rvm/environments/ruby-3.0.0 /home/coder/.rvm/environments/default
++ /scripts/alias : alias_create_execute()  27 > for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path"
++ /scripts/alias : alias_create_execute()  29 > [[ -L /home/coder/.rvm/wrappers/default ]]
++ /scripts/alias : alias_create_execute()  32 > command ln -fs /home/coder/.rvm/wrappers/ruby-3.0.0 /home/coder/.rvm/wrappers/default
++ /scripts/alias : alias_create_execute()  32 > ln -fs /home/coder/.rvm/wrappers/ruby-3.0.0 /home/coder/.rvm/wrappers/default
++ /scripts/alias : alias_create_execute()  35 > __rvm_db_ /home/coder/.rvm/config/alias default ruby-3.0.0
++ /scripts/functions/db : __rvm_db_()  77 > typeset __db __key __value
++ /scripts/functions/db : __rvm_db_()  78 > __db=/home/coder/.rvm/config/alias
++ /scripts/functions/db : __rvm_db_()  79 > __key=default
++ /scripts/functions/db : __rvm_db_()  80 > shift 2
++ /scripts/functions/db : __rvm_db_()  81 > __value=ruby-3.0.0
++ /scripts/functions/db : __rvm_db_()  82 > case "${__value}" in
++ /scripts/functions/db : __rvm_db_()  90 > __rvm_db_add /home/coder/.rvm/config/alias default ruby-3.0.0
++ /scripts/functions/db : __rvm_db_add()  58 > typeset __dir=/home/coder/.rvm/config
++ /scripts/functions/db : __rvm_db_add()  59 > [[ -f /home/coder/.rvm/config/alias ]]
++ /scripts/functions/db : __rvm_db_add()  60 > __rvm_db_remove /home/coder/.rvm/config/alias default
++ /scripts/functions/db : __rvm_db_remove()  49 > [[ -f /home/coder/.rvm/config/alias ]]
++ /scripts/functions/db : __rvm_db_remove()  51 > __rvm_sed -e '\#^default=# d' -e '/^$/d' /home/coder/.rvm/config/alias
++ /scripts/functions/support : __rvm_sed()  277 > sed -e '\#^default=# d' -e '/^$/d' /home/coder/.rvm/config/alias
++ /scripts/functions/db : __rvm_db_remove()  52 > command mv -f /home/coder/.rvm/config/alias.new /home/coder/.rvm/config/alias
++ /scripts/functions/db : __rvm_db_remove()  52 > mv -f /home/coder/.rvm/config/alias.new /home/coder/.rvm/config/alias
++ /scripts/functions/db : __rvm_db_add()  64 > printf '%b=%b\n' default ruby-3.0.0

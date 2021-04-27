@@ -1,0 +1,27 @@
+[2021-04-27 04:33:47] __rvm_set_executable
+__rvm_set_executable () 
+{ 
+    for __file in "$@";
+    do
+        [[ -x "${__file}" ]] || chmod +x "${__file}";
+    done
+}
+current path: /home/coder/.rvm/src/ruby-2.3.3
+GEM_PATH=/home/coder/.rvm/gems/ruby-3.0.0:/home/coder/.rvm/gems/ruby-3.0.0@global
+GEM_HOME=/home/coder/.rvm/gems/ruby-3.0.0
+PATH=/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/coder/.rvm/bin
+command(8): __rvm_set_executable /home/coder/.rvm/rubies/ruby-2.3.3/bin/erb /home/coder/.rvm/rubies/ruby-2.3.3/bin/gem /home/coder/.rvm/rubies/ruby-2.3.3/bin/irb /home/coder/.rvm/rubies/ruby-2.3.3/bin/rake /home/coder/.rvm/rubies/ruby-2.3.3/bin/rdoc /home/coder/.rvm/rubies/ruby-2.3.3/bin/ri /home/coder/.rvm/rubies/ruby-2.3.3/bin/ruby
+++ for __file in "$@"
+++ [[ -x /home/coder/.rvm/rubies/ruby-2.3.3/bin/erb ]]
+++ for __file in "$@"
+++ [[ -x /home/coder/.rvm/rubies/ruby-2.3.3/bin/gem ]]
+++ for __file in "$@"
+++ [[ -x /home/coder/.rvm/rubies/ruby-2.3.3/bin/irb ]]
+++ for __file in "$@"
+++ [[ -x /home/coder/.rvm/rubies/ruby-2.3.3/bin/rake ]]
+++ for __file in "$@"
+++ [[ -x /home/coder/.rvm/rubies/ruby-2.3.3/bin/rdoc ]]
+++ for __file in "$@"
+++ [[ -x /home/coder/.rvm/rubies/ruby-2.3.3/bin/ri ]]
+++ for __file in "$@"
+++ [[ -x /home/coder/.rvm/rubies/ruby-2.3.3/bin/ruby ]]

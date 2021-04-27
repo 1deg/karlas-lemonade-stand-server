@@ -1,0 +1,62 @@
+[2021-04-27 04:30:51] __rvm_package_extract
+__rvm_package_extract () 
+{ 
+    rvm_debug __rvm_package_extract:$#: "$@";
+    \typeset __extract_src __extract_target __tempdir __path __file __return;
+    __extract_src="$1";
+    __extract_target="$2";
+    shift 2;
+    __return=0;
+    __tempdir="$( TMPDIR="${rvm_tmp_path}" mktemp -d -t rvm-tmp.XXXXXXXXX )";
+    __rvm_package_extract_run "$__extract_src" "$__tempdir" "$@" || __return=$?;
+    if (( __return == 0 )); then
+        for __path in "$__tempdir"/*;
+        do
+            __file="${__path##*/}";
+            if [[ -n "${__file}" && -e "$__extract_target/${__file}" ]]; then
+                \command \rm -rf "$__extract_target/${__file}" || __return=$?;
+            fi;
+            \command \mv -f "${__path}" "$__extract_target/" || __return=$?;
+        done;
+    fi;
+    if [[ -n "$__tempdir" ]]; then
+        \command \rm -rf "$__tempdir";
+    fi;
+    return $__return
+}
+current path: /home/coder/.rvm/src
+GEM_PATH=/home/coder/.rvm/gems/ruby-3.0.0:/home/coder/.rvm/gems/ruby-3.0.0@global
+GEM_HOME=/home/coder/.rvm/gems/ruby-3.0.0
+PATH=/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/coder/.rvm/bin
+command(3): __rvm_package_extract /home/coder/.rvm/archives/ruby-2.3.3.tar.bz2 /home/coder/.rvm/tmp/rvm_src_2404
+++ rvm_debug __rvm_package_extract:2: /home/coder/.rvm/archives/ruby-2.3.3.tar.bz2 /home/coder/.rvm/tmp/rvm_src_2404
+++ ((  0  ))
+++ return 0
+++ typeset __extract_src __extract_target __tempdir __path __file __return
+++ __extract_src=/home/coder/.rvm/archives/ruby-2.3.3.tar.bz2
+++ __extract_target=/home/coder/.rvm/tmp/rvm_src_2404
+++ shift 2
+++ __return=0
++++ TMPDIR=/home/coder/.rvm/tmp
++++ mktemp -d -t rvm-tmp.XXXXXXXXX
+++ __tempdir=/home/coder/.rvm/tmp/rvm-tmp.YGGVKMn91
+++ __rvm_package_extract_run /home/coder/.rvm/archives/ruby-2.3.3.tar.bz2 /home/coder/.rvm/tmp/rvm-tmp.YGGVKMn91
+++ typeset __extract_run_src __extract_run_target __exclude_elements
+++ __extract_run_src=/home/coder/.rvm/archives/ruby-2.3.3.tar.bz2
+++ __extract_run_target=/home/coder/.rvm/tmp/rvm-tmp.YGGVKMn91
+++ shift 2
+++ __exclude_elements=()
+++ [[    != *\ \-\-\n\o\-\s\a\m\e\-\o\w\n\e\r\ * ]]
+++ __rvm_tar --help
+++ __rvm_grep -- --no-same-owner
+++ GREP_OPTIONS=
+++ command grep -- --no-same-owner
+++ grep -- --no-same-owner
+++ rvm_tar_options=--no-same-owner
+++ [[ -d /home/coder/.rvm/tmp/rvm-tmp.YGGVKMn91 ]]
+++ case "$__extract_run_src" in
+++ __map_tar_excludes
+++ typeset __exclude_element
+++ [[ -n '' ]]
+++ __rvm_tar -xjf /home/coder/.rvm/archives/ruby-2.3.3.tar.bz2 -C /home/coder/.rvm/tmp/rvm-tmp.YGGVKMn91 --no-same-owner
+++ tar -xjf /home/coder/.rvm/archives/ruby-2.3.3.tar.bz2 -C /home/coder/.rvm/tmp/rvm-tmp.YGGVKMn91 --no-same-owner

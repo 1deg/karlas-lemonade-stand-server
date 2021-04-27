@@ -1,0 +1,17 @@
+[2021-04-27 04:31:31] __rvm_patch
+__rvm_patch () 
+{ 
+    \patch "$@" || return $?
+}
+current path: /home/coder/.rvm/src/ruby-2.3.3
+GEM_PATH=/home/coder/.rvm/gems/ruby-3.0.0:/home/coder/.rvm/gems/ruby-3.0.0@global
+GEM_HOME=/home/coder/.rvm/gems/ruby-3.0.0
+PATH=/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/coder/.rvm/bin
+command(8): __rvm_patch -F 25 -p1 -N -f -i /home/coder/.rvm/patches/ruby/ruby_2_3_gcc7.patch
+++ patch -F 25 -p1 -N -f -i /home/coder/.rvm/patches/ruby/ruby_2_3_gcc7.patch
+patching file include/ruby/ruby.h
+patching file marshal.c
+Hunk #1 succeeded at 1008 (offset -14 lines).
+Hunk #2 succeeded at 1037 (offset -14 lines).
+Hunk #3 succeeded at 2030 (offset -14 lines).
+Hunk #4 succeeded at 2076 (offset -14 lines).

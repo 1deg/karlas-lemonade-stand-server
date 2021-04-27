@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"on_load_callbacks:ETI"'Zeitwerk::Loader#on_load_callbacks;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"CUser-oriented callbacks to be fired when a constant is loaded.;T:
+@fileI"lib/zeitwerk/loader.rb;T:0@omit_headings_from_table_of_contents_below0F@I"Zeitwerk::Loader;TcRDoc::NormalClass0

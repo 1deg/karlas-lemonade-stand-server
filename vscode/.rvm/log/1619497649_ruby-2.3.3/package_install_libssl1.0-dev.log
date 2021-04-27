@@ -1,0 +1,43 @@
+[2021-04-27 04:27:32] requirements_debian_libs_install
+requirements_debian_libs_install () 
+{ 
+    __rvm_try_sudo apt-get --no-install-recommends --yes install "$@" || return $?
+}
+current path: /vscode
+GEM_PATH=/home/coder/.rvm/gems/ruby-3.0.0:/home/coder/.rvm/gems/ruby-3.0.0@global
+GEM_HOME=/home/coder/.rvm/gems/ruby-3.0.0
+PATH=/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/coder/.rvm/bin
+command(2): requirements_debian_libs_install libssl1.0-dev
+++ __rvm_try_sudo apt-get --no-install-recommends --yes install libssl1.0-dev
+++ typeset -a command_to_run
+++ typeset sudo_path sbin_path missing_paths
+++ command_to_run=("$@")
+++ ((  UID == 0  ))
+++ case "$rvm_autolibs_flag_number" in
+++ is_a_function __rvm_sudo
+++ typeset -f __rvm_sudo
+++ missing_paths=
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /sbin ]]
+++ [[ :/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/coder/.rvm/bin: != *\:\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/sbin ]]
+++ [[ :/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/coder/.rvm/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/local/sbin ]]
+++ [[ :/home/coder/.rvm/gems/ruby-3.0.0/bin:/home/coder/.rvm/gems/ruby-3.0.0@global/bin:/home/coder/.rvm/rubies/ruby-3.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/coder/.rvm/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
+++ [[ -n '' ]]
+++ command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
+++ __rvm_sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install libssl1.0-dev'\'': ' apt-get --no-install-recommends --yes install libssl1.0-dev
+++ command sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install libssl1.0-dev'\'': ' apt-get --no-install-recommends --yes install libssl1.0-dev
+++ sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install libssl1.0-dev'\'': ' apt-get --no-install-recommends --yes install libssl1.0-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package libssl1.0-dev is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'libssl1.0-dev' has no installation candidate
+++ return 100
+++ return 100

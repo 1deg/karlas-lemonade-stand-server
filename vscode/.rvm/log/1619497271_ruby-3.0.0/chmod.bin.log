@@ -1,0 +1,35 @@
+[2021-04-27 04:23:49] __rvm_set_executable
+__rvm_set_executable () 
+{ 
+    for __file in "$@";
+    do
+        [[ -x "${__file}" ]] || chmod +x "${__file}";
+    done
+}
+current path: /home/coder/.rvm/src/ruby-3.0.0
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/coder/.rvm/bin
+command(13): __rvm_set_executable /home/coder/.rvm/rubies/ruby-3.0.0/bin/bundle /home/coder/.rvm/rubies/ruby-3.0.0/bin/bundler /home/coder/.rvm/rubies/ruby-3.0.0/bin/erb /home/coder/.rvm/rubies/ruby-3.0.0/bin/gem /home/coder/.rvm/rubies/ruby-3.0.0/bin/irb /home/coder/.rvm/rubies/ruby-3.0.0/bin/racc /home/coder/.rvm/rubies/ruby-3.0.0/bin/rake /home/coder/.rvm/rubies/ruby-3.0.0/bin/rbs /home/coder/.rvm/rubies/ruby-3.0.0/bin/rdoc /home/coder/.rvm/rubies/ruby-3.0.0/bin/ri /home/coder/.rvm/rubies/ruby-3.0.0/bin/ruby /home/coder/.rvm/rubies/ruby-3.0.0/bin/typeprof
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/bundle ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/bundler ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/erb ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/gem ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/irb ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/racc ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/rake ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/rbs ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/rdoc ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/ri ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/ruby ]]
+++ /scripts/functions/gemset : __rvm_set_executable()  404 > for __file in "$@"
+++ /scripts/functions/gemset : __rvm_set_executable()  405 > [[ -x /home/coder/.rvm/rubies/ruby-3.0.0/bin/typeprof ]]

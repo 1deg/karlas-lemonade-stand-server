@@ -1,0 +1,28 @@
+{
+  "name": "karlas-lemonade-stand-node",
+  "version": "1.0.0",
+  "description": "Karla’s Lemonade Stand - One Degree interview app in node.js.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericisaiah/karlas-lemonade-stand-node.git"
+  },
+  "author": "One Degree",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericisaiah/karlas-lemonade-stand-node/issues"
+  },
+  "homepage": "https://github.com/ericisaiah/karlas-lemonade-stand-node#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bower": "^1.8.0",
+    "express": "^4.15.2",
+    "method-override": "^3.0.0",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "4.1.1"
+  }
+}
